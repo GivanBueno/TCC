@@ -33,7 +33,8 @@ echo '<html>';
         echo '<div id="map"></div>';
         echo '<script>';
             echo 'var map;';
-            echo 'function initMap() {
+            echo 'function initMap() 
+            {
                
                 var sorocaba = {lat: -23.497272, lng: -47.455759};
                 

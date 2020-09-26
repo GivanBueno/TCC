@@ -82,7 +82,7 @@
                                 <img src="assets/img/gallery/k.png" alt="" style="max-width: 80px;">
                             </div>
                             <div class="cat-cap">
-                                <h5><a href="services.html"><span class="element">Livros</span></a></h5>
+                                <h5><a href="livros.php"><span class="element">Livros</span></a></h5>
                             </div>
                         </div>
                     </div>
@@ -92,7 +92,7 @@
 							<img src="assets/img/gallery/l.png" alt="" style="max-width: 80px;">
                             </div>
                             <div class="cat-cap">
-                                <h5><a href="services.html"><span class="element">Artigos </span></a></h5>
+                                <h5><a href="artigos.php"><span class="element">Artigos </span></a></h5>
                             </div>
                         </div>
                     </div>
