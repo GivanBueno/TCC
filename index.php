@@ -27,7 +27,7 @@
                             <div class="row">
                                 <div style="background: #00000090;padding: 10;" class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                                     <div class="hero__caption">';
-                                        echo '<h1 data-animation="fadeInLeft" data-delay="0.2s"><span>'.$row['Titulo'].'</span></h1>
+                                        echo '<h1 data-animation="fadeInLeft" data-delay="0.2s"><span>'.$row['titulo'].'</span></h1>
                                         <p data-animation="fadeInLeft" data-delay="0.4s">'.substr($row['conteudo'],0, 304).'...</p><a href="noticia.php?id='.$row['id'].'" class="btn hero-btn" data-animation="fadeInLeft" data-delay="0.7s">Ler Mais <i class="ti-arrow-right"></i></a>';
                                     }
                 echo '</div></div>
@@ -223,7 +223,7 @@
                                 </div>
                                 <div class="blog-cap">
                                     <p>18 Ago</p>
-                                    <h3><a href="noticia.php?id='.$row['id'].'">'.$row['Titulo'].'</a></h3>
+                                    <h3><a href="noticia.php?id='.$row['id'].'">'.$row['titulo'].'</a></h3>
                                 </div>
                             </div>
                         </div>

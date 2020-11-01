@@ -32,6 +32,7 @@
 }
 </style>
 
+
 <head>
     <script src="/tabela/jquery.js"></script>
     <script src="/tabela/DataTables/datatables.js"></script>
@@ -48,7 +49,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "obu";
+$dbname = "observatorio";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -61,13 +62,12 @@ echo
                 <tr>
                     <th>ID</th>
                     <th>Titulo</th>
-                    <th>Classificação 1</th>
-                    <th>Classificação 2</th>
+                    <th>Nomeclatura</th>
+                    <th>Classe</th>
                     <th>Download</th>
-                    <th>Tipo</th>
                 </tr>
             </thead><tbody>';
-$sql = "SELECT * FROM  documentos WHERE classe = 'Documentos de Referência' ";
+$sql = "SELECT * FROM  documentos WHERE classe = 'documentos e refencias' ";
 $results = $conn->query($sql);
 while($row = $results->fetch_assoc()) {
 
@@ -77,8 +77,7 @@ while($row = $results->fetch_assoc()) {
                     <td>'.$row['titulo'].'</td>
                     <td>'.$row['nomeclatura'].'</td>
                     <td>'.$row['classe'].'</td>
-                    <td><a href="'.$row['link'].'" class="genric-btn success-border circle" target="_blank" class="genric-btn success-border circle">Link</a></td>
-                    <td>'.$row['tipo'].'</td>
+                    <td><a href="'.$row['link'].'" class="genric-btn success-border circle"  target="_blank">Link</a></td>
                 </tr>
             ';
            
@@ -88,10 +87,9 @@ echo '</tbody><tfoot>
             <tr>
                 <th>ID</th>
                 <th>Titulo</th>
-                <th>Classificação 1</th>
-                <th>Classificação 2</th>
+                <th>Nomeclatura</th>
+                <th>Classe</th>
                 <th>Download</th>
-                <th>Autor(a)</th>
             </tr>
         </tfoot>
     </table>

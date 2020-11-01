@@ -2,14 +2,14 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "obu";
+$dbname = "observatorio";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
 $conn->set_charset('utf-8');
 
 
-$sql = "SELECT * FROM spawpoint";
+$sql = "SELECT * FROM fotos";
 $result = $conn->query($sql);
 
 

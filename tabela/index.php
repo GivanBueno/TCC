@@ -48,7 +48,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "obu";
+$dbname = "observatorio";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -61,13 +61,12 @@ echo
                 <tr>
                     <th>ID</th>
                     <th>Titulo</th>
-                    <th>Classificação 1</th>
-                    <th>Classificação 2</th>
+                    <th>Nomeclatura</th>
+                    <th>Classe</th>
                     <th>Download</th>
-                    <th>Tipo</th>
                 </tr>
             </thead><tbody>';
-$sql = "SELECT * FROM  documentos ORDER BY created DESC ";
+$sql = "SELECT * FROM  documentos ORDER BY created ASC ";
 $results = $conn->query($sql);
 while($row = $results->fetch_assoc()) {
 
@@ -78,7 +77,6 @@ while($row = $results->fetch_assoc()) {
                     <td>'.$row['nomeclatura'].'</td>
                     <td>'.$row['classe'].'</td>
                     <td><a href="'.$row['link'].'" class="genric-btn success-border circle" target="_blank">Link</a></td>
-                    <td>'.$row['tipo'].'</td>
                 </tr>
             ';
            
@@ -88,10 +86,9 @@ echo '</tbody><tfoot>
             <tr>
                 <th>ID</th>
                 <th>Titulo</th>
-                <th>Classificação 1</th>
-                <th>Classificação 2</th>
+                <th>Nomeclatura</th>
+                <th>Classe</th>
                 <th>Download</th>
-                <th>Autor(a)</th>
             </tr>
         </tfoot>
     </table>

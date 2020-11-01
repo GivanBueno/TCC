@@ -56,7 +56,7 @@
                                 <img src="assets/img/gallery/word.png" alt="" style="max-width: 80px;">
                             </div>
                             <div class="cat-cap">
-                                <h5><a href="links.php"><span class="element">links úteis</span></a></h5>
+                                <h5><a href="links.php"><span class="element">Links úteis</span></a></h5>
                             </div>
                         </div>
                     </div>
@@ -66,7 +66,7 @@
                                 <img src="assets/img/gallery/n.png" alt="" style="max-width: 80px;">
                             </div>
                             <div class="cat-cap">
-                                <h5><a href="referencias.php"><span class="element">Referencias </span></a></h5>
+                                <h5><a href="referencias.php"><span class="element">Documentos de Referencias</span></a></h5>
                             </div>
                         </div>
                     </div>
