@@ -55,7 +55,7 @@
                     <img class="card-img-top" src="'.$row['foto'].'" alt="Card image cap">
                     <div class="card-body">
                       <h5 class="card-title">'.$row['nome_comum'].'</h5>
-                      <p class="card-text">'.$row['nome_cientifico'].', '.$row['id_usuario'].' <br> 
+                      <p class="card-text">'.$row['nome_cientifico'].' <br> '.$row['id_usuario'].' <br> 
                       <strong>'.$row['localizacao'].'</strong></p>
                     </div>
                   </div>';
