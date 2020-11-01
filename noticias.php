@@ -19,7 +19,7 @@
 
 <?php
 
-$sql = "SELECT * FROM  noticias ORDER BY created DESC ";
+$sql = "SELECT * FROM  noticias ORDER BY criacao DESC ";
 $results = $conn->query($sql);
 if($row = $results->fetch_assoc()) {
 echo '<section class="blog_area section-padding">
@@ -37,7 +37,7 @@ echo '<section class="blog_area section-padding">
                         </div>
                         <div class="blog_details">
                             <a class="d-inline-block" href="noticia.php?id='.$row['id'].'">
-                                <h2 class="blog-head" style="color: #2d2d2d;">'.$row['Titulo'].'</h2>
+                                <h2 class="blog-head" style="color: #2d2d2d;">'.$row['titulo'].'</h2>
                             </a>
                             <p>'.substr($row['conteudo'],0, 304).'...</p>
                         </div>

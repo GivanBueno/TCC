@@ -14,7 +14,7 @@ $sql = "SELECT * FROM  noticias WHERE id='$id'";
              <div class="row">
                 <div class="col-xl-12">
                       <div class="hero-cap hero-cap2 text-center">
-                         <h2>'.$row['Titulo'].'</h2>
+                         <h2>'.$row['titulo'].'</h2>
                       </div>
                 </div>
              </div>
@@ -32,7 +32,7 @@ $sql = "SELECT * FROM  noticias WHERE id='$id'";
                       <img class="img-fluid" src="'.$row['imagem'].'" alt="">
                    </div>
                    <div class="blog_details">
-                      <h2 style="color: #2d2d2d;">'.$row['Titulo'].'
+                      <h2 style="color: #2d2d2d;">'.$row['titulo'].'
                       </h2>
                       <ul class="blog-info-link mt-3 mb-4">
                          <li><a href="#"><i class="fa fa-user"></i> Kamila </a></li>

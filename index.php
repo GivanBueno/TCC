@@ -14,7 +14,7 @@
        
 <?php
 
-    $sql = "SELECT * FROM  noticias ORDER BY created DESC LIMIT 1";
+    $sql = "SELECT * FROM  noticias ORDER BY criacao DESC LIMIT 1";
     $results = $conn->query($sql);
     if($row = $results->fetch_assoc()) {
 
@@ -212,7 +212,7 @@
                                 </div>
                             </div>';
 
-            $sql = "SELECT * FROM  noticias ORDER BY created ";
+            $sql = "SELECT * FROM  noticias ORDER BY criacao ";
             $results = $conn->query($sql);
             if($row = $results->fetch_assoc()) {
                 echo '<div class="col-lg-4 col-md-6">

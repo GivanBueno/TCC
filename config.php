@@ -20,7 +20,7 @@ if ( !defined('ABSPATH') )
 if ( !defined('BASEURL') )
 	define('BASEURL', '/TCC/');
 	
-
+	
 /** caminhos dos templates de header e footer **/
 define('HEADER_TEMPLATE', ABSPATH . 'inc/header.php');
 define('FOOTER_TEMPLATE', ABSPATH . 'inc/footer.php');
