@@ -9,7 +9,7 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 $conn->set_charset('utf-8');
 
 
-$sql = "SELECT * FROM fotos";
+$sql = "SELECT * FROM fotos WHERE validado = '1'";
 $result = $conn->query($sql);
 
 

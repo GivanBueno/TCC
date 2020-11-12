@@ -1,7 +1,8 @@
 {
 	"version": 3,
 	"file": "style.css",
-	"sources": [
+	"sources": 
+	[
 		"../scss/style.scss",
 		"../scss/_variables.scss",
 		"../scss/_color.scss",

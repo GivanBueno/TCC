@@ -19,8 +19,6 @@
 	<dt>Email:</dt>
 	<dd><?php echo $customer['email']; ?></dd>
 
-	<dt>Foto:</dt>
-	<dd><?php echo $customer['profile_pic']; ?></dd>
 </dl>
 
 <div id="actions" class="row">

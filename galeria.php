@@ -13,7 +13,7 @@
             <div class="row">
                 <div class="col-xl-12" style="text-align:center">
                     <div class="hero-cap hero-cap2">
-                            <h2>Mapa</h2>
+                            <h2>Galeria</h2>
                     </div>
                 </div>
             </div>
@@ -25,39 +25,27 @@
         <div class="col-xl-8 col-lg-9 col-md-12">
             <div class="section-tittle mb-35" style="margin-top:3%">
                 
-                <h2>Mapa da vida local da região de Sorocaba</h2>
+                <h2>Galeria da vida local da região de Sorocaba</h2>
             </div>
             <div class="about-caption mb-50">
                 
-                <p>Aqui temos o mapa da região de Sorocaba mostrando as entradas da comunidade </p>
+                <p>Aqui temos a galeria de fotos tiradas da vida local da região da cidade de Sorocaba </p>
             </div>
         </div>
-
-        
-    </div>
-    <div class="col-xl-12 col-lg-12 col-md-12" style="margin-bottom:30px">
-        <div class="progress-table-wrap">
-        <iframe src="Mapa/mapa.php" style="width:100%;min-height:600px; border:none;"></iframe>
-        </div>
-    </div>
-</div>
-
 
 <div class="container" style="padding:40px 0">
     <div class="row">
         <?php
-        $sql = "SELECT * FROM fotos WHERE  validado = '1'";    
+        $sql = "SELECT * FROM fotos WHERE  validado = '1' ORDER BY nome_comum";    
             if($results = $conn->query($sql))
             {
                 while ($row = $results->fetch_assoc())
-                {       
-                        
+                {           
                     echo'<div class="card col-md-3" style="width: 18rem;">
                     <img class="card-img-top" src="'.$row['foto'].'" alt="Card image cap">
                     <div class="card-body">
-                      <h5 class="card-title">'.$row['nome_comum'].'</h5>
-                      <p class="card-text">'.$row['nome_cientifico'].' <br><p>Por: '.$row['id_usuario'].' </p>
-                      <strong>'.$row['localizacao'].'</strong></p>
+                      <a> <h5 class="card-title">'.$row['nome_comum'].'</h5> </a>
+                      <p class="card-text">'.$row['nome_cientifico'].'
                     </div>
                   </div>';
                 }
