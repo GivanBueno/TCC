@@ -13,36 +13,36 @@
 <?php endif; ?>
 
 <dl class="dl-horizontal">
+
+	<dt>Id do documento:</dt>
+	<dd><?php echo $customer['id']; ?></dd>
+	<br/>
+	<dt>Id do usuário que cadastrou o documento:</dt>
+	<dd><?php echo $customer['id_usuario']; ?></dd>
+	<br/>
 	<dt>titulo:</dt>
 	<dd><?php echo $customer['titulo']; ?></dd>
-
-	<dt>filo:</dt>
+	<br/>
+	<dt>Filo:</dt>
 	<dd><?php echo $customer['filo']; ?></dd>
-
-	<dt>link:</dt>
+	<br/>
+	<dt>Link:</dt>
 	<dd><?php echo $customer['link']; ?></dd>
-</dl>
-
-<dl class="dl-horizontal">
-	<dt>tipo:</dt>
-	<dd><?php echo $customer['tipo']; ?></dd>
-
-	<dt>img:</dt>
-	<dd><?php echo $customer['img']; ?></dd>
-
-	<dt>edit:</dt>
-	<dd><?php echo $customer['edit']; ?></dd>
-</dl>
-
-<dl class="dl-horizontal">
-	<dt>Classificação 1:</dt>
+	<br/>
+	<dt>Imagem:</dt>
+	<dd><?php echo $customer['image']; ?></dd>
+	<br/>
+	<dt>Nomenclatura:</dt>
 	<dd><?php echo $customer['nomeclatura']; ?></dd>
-
-	<dt>Classificação 2:</dt>
+	<br/>
+	<dt>Classe:</dt>
 	<dd><?php echo $customer['classe']; ?></dd>
-
-	<dt>Autor:</dt>
-	<dd><?php echo $customer['edit']; ?></dd>
+	<br/>
+	<dt>Data de criação:</dt>
+	<dd><?php echo $customer['created']; ?></dd>
+	<br/>
+	<dt>Data de modificação:</dt>
+	<dd><?php echo $customer['modifed']; ?></dd>
 
 </dl>
 <div id="actions" class="row">
