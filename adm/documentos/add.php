@@ -5,12 +5,18 @@
 
 <?php include(HEADER_TEMPLATE); ?>
 
-<h2>Novo Cliente</h2>
+<h2>Nova Pesquisa</h2>
 
 <form action="add.php" method="post">
   <!-- area de campos do form -->
   <hr />
   <div class="row">
+
+    <div class="form-group col-md-4">
+      <label for="name">ID do usuário</label>
+      <input type="text" class="form-control" name="customer['id_usuario']">
+    </div>
+
     <div class="form-group col-md-4">
       <label for="name">Titulo</label>
       <input type="text" class="form-control" name="customer['titulo']">
@@ -22,30 +28,24 @@
     </div>
 
     <div class="form-group col-md-4">
-      <label for="name">Arquivo</label>
+      <label for="name">Link do arquivo</label>
       <input type="text" class="form-control" name="customer['link']">
     </div>
 
     <div class="form-group col-md-4">
-      <label for="name">Tipo</label>
+      <label for="name">Link da imagem</label>
       <input type="text" class="form-control" name="customer['tipo']">
     </div>
 
     <div class="form-group col-md-4">
-      <label for="name">Imagem</label>
-      <input type="text" class="form-control" name="customer['img']">
-    </div>
-
-    <div class="form-group col-md-4">
-      <label for="name">Classificação 1</label>
+      <label for="name">Nomeclatura</label>
       <input type="text" class="form-control" name="customer['nomeclatura']">
     </div>
 
     <div class="form-group col-md-4">
-      <label for="name">Classificação 2</label>
+      <label for="name">Classe</label>
       <input type="text" class="form-control" name="customer['classe']">
     </div>
-
 
     </div>
   </div>

@@ -5,15 +5,21 @@
 
 <?php include(HEADER_TEMPLATE); ?>
 
-<h2>Atualizar Cliente</h2>
+<h2>Atualizar Pesquisa</h2>
 
 <form action="edit.php?id=<?php echo $customer['id']; ?>" method="post">
   <hr />
   <div class="row">
+
   <div class="form-group col-md-4">
-      <label for="name">Titulo</label>
-      <input type="text" class="form-control" name="customer['titulo']" value="<?= $customer['titulo']?>">
-    </div>
+    <label for="name">ID do usuário</label>
+    <input type="text" class="form-control" name="customer['id_usuario']" value="<?= $customer['id_usuario']?>">
+  </div>
+
+  <div class="form-group col-md-4">
+    <label for="name">Titulo</label>
+    <input type="text" class="form-control" name="customer['titulo']" value="<?= $customer['titulo']?>">
+  </div>
 
     <div class="form-group col-md-4">
       <label for="name">Filo</label>
@@ -26,24 +32,20 @@
     </div>
 
     <div class="form-group col-md-4">
-      <label for="name">Tipo</label>
-      <input type="text" class="form-control" name="customer['tipo']" value="<?= $customer['tipo']?>">
-    </div>
-
-    <div class="form-group col-md-4">
       <label for="name">Imagem</label>
-      <input type="text" class="form-control" name="customer['img']" value="<?= $customer['img']?>">
+      <input type="text" class="form-control" name="customer['image']" value="<?= $customer['image']?>">
     </div>
 
     <div class="form-group col-md-4">
-      <label for="name">Classificação 1</label>
+      <label for="name">Nomeclatura</label>
       <input type="text" class="form-control" name="customer['nomeclatura']" value="<?= $customer['nomeclatura']?>">
     </div>
 
     <div class="form-group col-md-4">
-      <label for="name">Classificação 2</label>
+      <label for="name">Classe</label>
       <input type="text" class="form-control" name="customer['classe']" value="<?= $customer['classe']?>">
     </div>
+
   </div>
   <div id="actions" class="row">
     <div class="col-md-12">

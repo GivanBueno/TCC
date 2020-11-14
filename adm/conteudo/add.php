@@ -5,28 +5,32 @@
 
 <?php include(HEADER_TEMPLATE); ?>
 
-<h2>Novo Cliente</h2>
+<h2>Nova Noticia</h2>
 
 <form action="add.php" method="post">
   <!-- area de campos do form -->
   <hr />
   <div class="row">
-    <div class="form-group col-md-4">
-      <label for="page">Pagina</label>
-      <select name="customer['pagina']" id="page" class="form-control">
-        <option value="home">Home</option>
-        <option value="noticias">Noticias</option>
-        <option value="pesquisa">Pesquisas</option>
-        <option value="mapa">Mapas</option>
-        <option value="LEEF">LEEF</option>
-        <option value="contato">Contato</option>
-      </select> 
-    </div>
+  
+  <div class="form-group col-md-4">
+      <label for="name">ID do usuário</label>
+      <input type="text" class="form-control" name="customer['id_usuario']">
+  </div>
+
+  <div class="form-group col-md-4">
+      <label for="name">Título</label>
+      <input type="text" class="form-control" name="customer['titulo']">
+  </div>
 
     <div class="form-group col-md-12">
       <label for="campo2">Conteudo</label>
-      <textarea class="form-control" name="customer['txt']"></textarea>
+      <textarea class="form-control" name="customer['conteudo']"></textarea>
     </div>
+
+    <div class="form-group col-md-4">
+      <label for="name">Link da Imagem</label>
+      <input type="text" class="form-control" name="customer['imagem']">
+  </div>
 
     </div>
   </div>
