@@ -27,35 +27,35 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a href="<?php echo BASEURL; ?>index.php" class="navbar-brand">Admin OBU</a>
+          <a href="<?php echo BASEURL; ?>index.php" class="navbar-brand">ADM Observatório</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">        
           <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                    Conteudo <span class="caret"></span>
+                    Noticias <span class="caret"></span>
                 </a>
                 <ul class="dropdown-menu">
-                    <li><a href="<?php echo BASEURL; ?>conteudo">Gerenciar Conteudo</a></li>
-                    <li><a href="<?php echo BASEURL; ?>conteudo/add.php">Novo Conteudo</a></li>
+                    <li><a href="<?php echo BASEURL; ?>conteudo">Gerenciar Noticias</a></li>
+                    <li><a href="<?php echo BASEURL; ?>conteudo/add.php">Nova Noticia</a></li>
                 </ul>
             </li>  
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                    Documentos <span class="caret"></span>
+                    Pesquisas <span class="caret"></span>
                 </a>
                 <ul class="dropdown-menu">
-                    <li><a href="<?php echo BASEURL; ?>documentos">Gerenciar Conteudo</a></li>
-                    <li><a href="<?php echo BASEURL; ?>documentos/add.php">Novo Conteudo</a></li>
+                    <li><a href="<?php echo BASEURL; ?>documentos">Gerenciar Pesquisas</a></li>
+                    <li><a href="<?php echo BASEURL; ?>documentos/add.php">Nova Pesquisa</a></li>
                 </ul>
             </li>
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                    Admin <span class="caret"></span>
+                    Usuários <span class="caret"></span>
                 </a>
                 <ul class="dropdown-menu">
-                    <li><a href="<?php echo BASEURL; ?>user">Gerenciar Conteudo</a></li>
-                    <li><a href="<?php echo BASEURL; ?>user/add.php">Novo Conteudo</a></li>
+                    <li><a href="<?php echo BASEURL; ?>user">Gerenciar Usuários</a></li>
+                    <li><a href="<?php echo BASEURL; ?>user/add.php">Novo Usuário</a></li>
                 </ul>
             </li>
             <li class="dropdown">
@@ -63,7 +63,7 @@
                     LEEF <span class="caret"></span>
                 </a>
                 <ul class="dropdown-menu">
-                    <li><a href="<?php echo BASEURL; ?>LEEF">Gerenciar Conteudo</a></li>
+                    <li><a href="<?php echo BASEURL; ?>LEEF">Gerenciar Conteudos</a></li>
                     <li><a href="<?php echo BASEURL; ?>LEEF/add.php">Novo Conteudo</a></li>
                 </ul>
             </li>

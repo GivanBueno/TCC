@@ -5,7 +5,7 @@
 
 <?php include(HEADER_TEMPLATE); ?>
 
-<h2><?php echo $customer['id']; ?>: <?php echo $customer['pagina']; ?></h2>
+<h2><?php echo $customer['titulo']; ?></h2>
 <hr>
 
 <?php if (!empty($_SESSION['message'])) : ?>
@@ -13,11 +13,26 @@
 <?php endif; ?>
 
 <dl class="dl-horizontal">
-	<dt>Pagina</dt>
-	<dd><?php echo $customer['pagina']; ?></dd>
+	<dt>ID da notícia:</dt>
+	<dd><?php echo $customer['id']; ?></dd>
 	<br><br>
-	<dt>Conteudo:</dt>
-	<dd><?php echo $customer['txt']; ?></dd>
+	<dt>ID do usuário que criou:</dt>
+	<dd><?php echo $customer['id_usuario']; ?></dd>
+	<dt>Título da notícia:</dt>
+	<dd><?php echo $customer['titulo']; ?></dd>
+	<br><br>
+	<dt>Conteúdo da notícia:</dt>
+	<dd><?php echo $customer['conteudo']; ?></dd>
+	<br><br>
+	<dt>Imagem da notícia:</dt>
+	<dd><?php echo $customer['imagem']; ?></dd>
+	<br><br>
+	<dt>Data de criação:</dt>
+	<dd><?php echo $customer['criacao']; ?></dd>
+	<br><br>
+	<dt>Data de modificação:</dt>
+	<dd><?php echo $customer['modificacao']; ?></dd>
+	<br><br>
 
 </dl>
 

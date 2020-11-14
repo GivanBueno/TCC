@@ -11,7 +11,7 @@ $customer = null;
  */
 function index() {
 	global $customers;
-	$customers = find_all('conteudo');
+	$customers = find_all('noticias');
 }
 
 
