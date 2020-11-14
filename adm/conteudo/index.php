@@ -8,7 +8,7 @@
 <header>
 	<div class="row">
 		<div class="col-sm-6">
-			<h2>Clientes</h2>
+			<h2>Noticias</h2>
 		</div>
 		<div class="col-sm-6 text-right h2">
 	    	<a class="btn btn-primary" href="add.php"><i class="fa fa-plus"></i> Novo Conteudo</a>
@@ -31,8 +31,8 @@
 <thead>
 	<tr>
 		<th>ID</th>
-		<th width="30%">Conteudo</th>
-		<th>Imagem</th>
+		<th width="30%">Título</th>
+		<th>Conteudo</th>
 		<th>Opções</th>
 	</tr>
 </thead>

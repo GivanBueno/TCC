@@ -32,8 +32,8 @@
 	<tr>
 		<th>ID</th>
 		<th width="30%">Titulo</th>
-		<th>Título</th>
-		<th>Nomenclatura</th>
+		<th>Nomeclatura</th>
+		<th>Classe</th>
 		<th>Opções</th>
 	</tr>
 </thead>

@@ -16,20 +16,59 @@
 					<i class="fa fa-plus fa-5x"></i>
 				</div>
 				<div class="col-xs-12 text-center">
-					<p>Novo Cliente</p>
+					<p>Novo Usuário</p>
 				</div>
 			</div>
 		</a>
 	</div>
 
 	<div class="col-xs-6 col-sm-3 col-md-2">
-		<a href="customers" class="btn btn-default">
+		<a href="user" class="btn btn-default">
 			<div class="row">
 				<div class="col-xs-12 text-center">
 					<i class="fa fa-user fa-5x"></i>
 				</div>
 				<div class="col-xs-12 text-center">
-					<p>Clientes</p>
+					<p>Usuários</p>
+				</div>
+			</div>
+		</a>
+	</div>
+
+	<div class="col-xs-6 col-sm-3 col-md-2">
+		<a href="conteudo" class="btn btn-default">
+			<div class="row">
+				<div class="col-xs-12 text-center">
+					<i class="fa fa-user fa-5x"></i>
+				</div>
+				<div class="col-xs-12 text-center">
+					<p>Noticias</p>
+				</div>
+			</div>
+		</a>
+	</div>
+
+	<div class="col-xs-6 col-sm-3 col-md-2">
+		<a href="documentos" class="btn btn-default">
+			<div class="row">
+				<div class="col-xs-12 text-center">
+					<i class="fa fa-user fa-5x"></i>
+				</div>
+				<div class="col-xs-12 text-center">
+					<p>Pesquisas</p>
+				</div>
+			</div>
+		</a>
+	</div>
+
+	<div class="col-xs-6 col-sm-3 col-md-2">
+		<a href="LEEF" class="btn btn-default">
+			<div class="row">
+				<div class="col-xs-12 text-center">
+					<i class="fa fa-user fa-5x"></i>
+				</div>
+				<div class="col-xs-12 text-center">
+					<p>LEEF</p>
 				</div>
 			</div>
 		</a>

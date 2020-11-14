@@ -15,7 +15,7 @@
 <dl class="dl-horizontal">
 	<dt>Nome:</dt>
 	<dd><?php echo $customer['nome']; ?></dd>
-
+	<br/>
 	<dt>Email:</dt>
 	<dd><?php echo $customer['email']; ?></dd>
 
