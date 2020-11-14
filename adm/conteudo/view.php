@@ -15,24 +15,25 @@
 <dl class="dl-horizontal">
 	<dt>ID da notícia:</dt>
 	<dd><?php echo $customer['id']; ?></dd>
-	<br><br>
-	<dt>ID do usuário que criou:</dt>
+	<br/>
+	<dt>ID do usuário:</dt>
+	<br/>
 	<dd><?php echo $customer['id_usuario']; ?></dd>
 	<dt>Título da notícia:</dt>
 	<dd><?php echo $customer['titulo']; ?></dd>
-	<br><br>
+	<br/>
 	<dt>Conteúdo da notícia:</dt>
 	<dd><?php echo $customer['conteudo']; ?></dd>
-	<br><br>
+	<br/>
 	<dt>Imagem da notícia:</dt>
 	<dd><?php echo $customer['imagem']; ?></dd>
-	<br><br>
+	<br/>
 	<dt>Data de criação:</dt>
 	<dd><?php echo $customer['criacao']; ?></dd>
-	<br><br>
+	<br/>
 	<dt>Data de modificação:</dt>
 	<dd><?php echo $customer['modificacao']; ?></dd>
-	<br><br>
+	<br/>
 
 </dl>
 

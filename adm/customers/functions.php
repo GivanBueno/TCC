@@ -11,7 +11,7 @@ $customer = null;
  */
 function index() {
 	global $customers;
-	$customers = find_all('customers');
+	$customers = find_all('usuario');
 }
 
 
@@ -28,15 +28,15 @@ function find_all( $table ) {
  */
 function add() {
 
-	if (!empty($_POST['customer'])) {
+	if (!empty($_POST['usuario'])) {
 	  
 	  $today = 
 		date_create('now', new DateTimeZone('America/Sao_Paulo'));
   
-	  $customer = $_POST['customer'];
+	  $customer = $_POST['usuario'];
 	  $customer['modified'] = $customer['created'] = $today->format("Y-m-d H:i:s");
 	  
-	  save('customers', $customer);
+	  save('usuario', $customer);
 	  header('location: index.php');
 	}
   }
@@ -53,17 +53,17 @@ function edit() {
   
 	  $id = $_GET['id'];
   
-	  if (isset($_POST['customer'])) {
+	  if (isset($_POST['usuario'])) {
   
-		$customer = $_POST['customer'];
+		$customer = $_POST['usuario'];
 		$customer['modified'] = $now->format("Y-m-d H:i:s");
   
-		update('customers', $id, $customer);
+		update('usuario', $id, $customer);
 		header('location: index.php');
 	  } else {
   
 		global $customer;
-		$customer = find('customers', $id);
+		$customer = find('usuario', $id);
 	  } 
 	} else {
 	  header('location: index.php');
@@ -75,7 +75,7 @@ function edit() {
  */
 function view($id = null) {
 	global $customer;
-	$customer = find('customers', $id);
+	$customer = find('usuario', $id);
   }
 
   /**
@@ -84,7 +84,7 @@ function view($id = null) {
 function delete($id = null) {
 
 	global $customer;
-	$customer = remove('customers', $id);
+	$customer = remove('usuario', $id);
   
 	header('location: index.php');
   }
