@@ -1,14 +1,12 @@
 <?php require_once 'config.php'; ?>
 <?php require_once DBAPI; ?>
 <?php include(HEADER_TEMPLATE); ?>
-
-    <script src="assets/js/jquery.js"></script>
-
-    <script>
-        $(document).ready(function() {
-        $('#example').DataTable();
-        } );
-    </script>
+<script src="<?=BASEURL?>assets/js/jquery.js"></script>
+<script>
+    $(document).ready(function() {
+    $('#example').DataTable();
+    } );
+</script>
 
 <div class="slider-area2 section-bg2" data-background="assets/img/gallery/pesquisa.png">
     <div class="slider-height2 d-flex align-items-center" style="background: #00000060;">

@@ -34,6 +34,7 @@ function add() {
 		date_create('now', new DateTimeZone('America/Sao_Paulo'));
   
 	  $customer = $_POST['usuario'];
+	  $customer['senha']    = hash('sha256',$customer['senha']);
 	  $customer['modified'] = $customer['created'] = $today->format("Y-m-d H:i:s");
 	  
 	  save('usuario', $customer);
@@ -56,6 +57,7 @@ function edit() {
 	  if (isset($_POST['usuario'])) {
   
 		$customer = $_POST['usuario'];
+		$customer['senha'] = hash('sha256',$customer['senha']);
 		$customer['modified'] = $now->format("Y-m-d H:i:s");
   
 		update('usuario', $id, $customer);

@@ -1,3 +1,6 @@
+<?php
+    require '../config.php';
+?>
 <style>
 .genric-btn.success-border {
     color: #4cd3e3;
@@ -33,9 +36,9 @@
 </style>
 
 <head>
-    <script src="/tabela/jquery.js"></script>
-    <script src="h/tabela/DataTables/datatables.js"></script>
-	<link rel="stylesheet" href="/tabela/DataTables/datatables.css">
+    <script src="jquery.js"></script>
+    <script src="<?=BASEURL?>DataTables/datatables.js"></script>
+	<link rel="stylesheet" href="<?=BASEURL?>tabela/DataTables/datatables.css">
 
     <script>
         $(function() {
@@ -56,7 +59,7 @@ $conn->set_charset('utf8mb4');
 
 echo 
     '<body>
-        <table id="example" class="display" style="width:100%">
+        <table id="example" class="display table table-bordered" style="width:100%">
             <thead>
                 <tr>
                     <th>ID</th>
