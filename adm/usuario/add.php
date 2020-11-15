@@ -5,7 +5,7 @@
 
 <?php include(HEADER_TEMPLATE); ?>
 
-<h2>Novo Cliente</h2>
+<h2>Novo Usuário</h2>
 
 <form action="add.php" method="post">
   <!-- area de campos do form -->
@@ -26,10 +26,6 @@
       <input type="password" class="form-control" name="customer['senha']">
     </div>
 
-    <div class="form-group col-md-4">
-      <label for="name">Foto Usuario</label>
-      <input type="text" class="form-control" name="customer['profile_pic']">
-    </div>
     </div>
   </div>
   

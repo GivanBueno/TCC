@@ -11,24 +11,25 @@
   <hr />
   <div class="row">
   <div class="form-group col-md-4">
-      <label for="name">nome</label>
+      <label for="name">Nome</label>
       <input type="text" class="form-control" name="customer['nome']" value="<?= $customer['nome']?>">
     </div>
 
     <div class="form-group col-md-4">
-      <label for="name">email</label>
+      <label for="name">Email</label>
       <input type="email" class="form-control" name="customer['email']" value="<?= $customer['email']?>">
     </div>
 
     <div class="form-group col-md-4">
-      <label for="name">senha</label>
+      <label for="name">Senha</label>
       <input type="password" class="form-control" name="customer['senha']" value="<?= $customer['senha']?>">
     </div>
 
     <div class="form-group col-md-4">
-      <label for="name">Foto</label>
-      <input type="text" class="form-control" name="customer['profile_pic']" value="<?= $customer['profile_pic']?>">
+      <label for="name">Administrador</label>
+      <input type="email" class="form-control" name="customer['adm']" value="<?= $customer['adm']?>">
     </div>
+
 
   </div>
   <div id="actions" class="row">
