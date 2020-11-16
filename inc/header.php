@@ -77,7 +77,7 @@
                                             <ul id="navigation">                                                                                          
                                                 <li class="active"><a href="index.php">Home</a></li>
                                                 <li><a href="noticias.php">Notícias</a></li>
-                                                <li><a href="pesquisas.php">Pesquisas</a></li>
+                                                <li><a href="categorias.php">Pesquisas</a></li>
                                                 <li><a href="mapa.php">Mapa</a></li>
                                                 <li><a href="LEEF.php">LEEF</a></li>
                                                 <li><a href="contato.php">Contato</a></li>
