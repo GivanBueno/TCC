@@ -36,8 +36,8 @@
                     Noticias <span class="caret"></span>
                 </a>
                 <ul class="dropdown-menu">
-                    <li><a href="<?php echo BASEURL; ?>conteudo">Gerenciar Noticias</a></li>
-                    <li><a href="<?php echo BASEURL; ?>conteudo/add.php">Nova Noticia</a></li>
+                    <li><a href="<?php echo BASEURL; ?>noticias">Gerenciar Noticias</a></li>
+                    <li><a href="<?php echo BASEURL; ?>noticias/add.php">Nova Noticia</a></li>
                 </ul>
             </li>  
             <li class="dropdown">
@@ -45,8 +45,8 @@
                     Pesquisas <span class="caret"></span>
                 </a>
                 <ul class="dropdown-menu">
-                    <li><a href="<?php echo BASEURL; ?>documentos">Gerenciar Pesquisas</a></li>
-                    <li><a href="<?php echo BASEURL; ?>documentos/add.php">Nova Pesquisa</a></li>
+                    <li><a href="<?php echo BASEURL; ?>pesquisas">Gerenciar Pesquisas</a></li>
+                    <li><a href="<?php echo BASEURL; ?>pesquisas/add.php">Nova Pesquisa</a></li>
                 </ul>
             </li>
             <li class="dropdown">
@@ -54,8 +54,8 @@
                     Usuários <span class="caret"></span>
                 </a>
                 <ul class="dropdown-menu">
-                    <li><a href="<?php echo BASEURL; ?>user">Gerenciar Usuários</a></li>
-                    <li><a href="<?php echo BASEURL; ?>user/add.php">Novo Usuário</a></li>
+                    <li><a href="<?php echo BASEURL; ?>usuario">Gerenciar Usuários</a></li>
+                    <li><a href="<?php echo BASEURL; ?>usuario/add.php">Novo Usuário</a></li>
                 </ul>
             </li>
             <li class="dropdown">

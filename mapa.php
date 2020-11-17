@@ -29,7 +29,7 @@
             </div>
             <div class="about-caption mb-50">
                 
-                <p>Aqui temos o mapa da região de Sorocaba mostrando as entradas da comunidade </p>
+                <p>Aqui temos o mapa da região de Sorocaba mostrando as fotos da comunidade </p>
             </div>
         </div>
 
@@ -52,11 +52,11 @@
                 while ($row = $results->fetch_assoc())
                 {       
                         
-                    echo'<div class="card col-md-3" style="width: 18rem;">
+                    echo'<div class="card col-md-3" style="width: 18rem;padding-top:5px">
                     <img class="card-img-top" src="'.$row['foto'].'" alt="Card image cap">
                     <div class="card-body">
                       <h5 class="card-title">'.$row['nome_comum'].'</h5>
-                      <p class="card-text">'.$row['nome_cientifico'].' <br><p>Por: '.$row['id_usuario'].' </p>
+                      <p class="card-text">'.$row['nome_cientifico'].' <br><p>Por: '.$row['nome_envio'].' </p>
                       <strong>'.$row['localizacao'].'</strong></p>
                     </div>
                   </div>';

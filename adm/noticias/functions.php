@@ -53,10 +53,10 @@ function edit() {
   
 	  $id = $_GET['id'];
   
-	  if (isset($_POST['noticias'])) {
+	  if (isset($_POST['customer'])) {
   
-		$customer = $_POST['noticias'];
-		$customer['modified'] = $now->format("Y-m-d H:i:s");
+		$customer = $_POST['customer'];
+		$customer['modificacao'] = $now->format("Y-m-d H:i:s");
   
 		update('noticias', $id, $customer);
 		header('location: index.php');
