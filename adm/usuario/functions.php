@@ -54,11 +54,11 @@ function edit() {
   
 	  $id = $_GET['id'];
   
-	  if (isset($_POST['usuario'])) {
+	  if (isset($_POST['customer'])) {
   
-		$customer = $_POST['usuario'];
+		$customer = $_POST['customer'];
 		$customer['senha'] = hash('sha256',$customer['senha']);
-		$customer['modified'] = $now->format("Y-m-d H:i:s");
+		$customer['modificacao'] = $now->format("Y-m-d H:i:s");
   
 		update('usuario', $id, $customer);
 		header('location: index.php');

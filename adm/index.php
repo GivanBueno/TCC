@@ -68,7 +68,7 @@
 					<i class="fa fa-user fa-5x"></i>
 				</div>
 				<div class="col-xs-12 text-center">
-					<p>LEEF</p>
+					<p>Fotos</p>
 				</div>
 			</div>
 		</a>

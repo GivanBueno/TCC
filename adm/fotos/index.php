@@ -8,10 +8,10 @@
 <header>
 	<div class="row">
 		<div class="col-sm-6">
-			<h2>Clientes</h2>
+			<h2>Fotos</h2>
 		</div>
 		<div class="col-sm-6 text-right h2">
-	    	<a class="btn btn-primary" href="add.php"><i class="fa fa-plus"></i> Novo Conteudo</a>
+	    	<a class="btn btn-primary" href="add.php"><i class="fa fa-plus"></i> Nova Foto</a>
 	    	<a class="btn btn-default" href="index.php"><i class="fa fa-refresh"></i> Atualizar</a>
 	    </div>
 	</div>
@@ -31,9 +31,10 @@
 <thead>
 	<tr>
 		<th>ID</th>
-		<th width="30%">Titulo</th>
-		<th>Classificação</th>
-		<th>Classificação 2</th>
+		<th>Usuário</th>
+		<th width="30%">Nome comum</th>
+		<th>Nome Cientifico</th>
+		<th>Categoria</th>
 		<th>Opções</th>
 	</tr>
 </thead>
@@ -42,9 +43,11 @@
 <?php foreach ($customers as $customer) : ?>
 	<tr>
 		<td><?php echo $customer['id']; ?></td>
-		<td><?php echo $customer['titulo']; ?></td>
-		<td><?php echo $customer['nomeclatura']; ?></td>
-		<td><?php echo $customer['classe']; ?></td>
+		<td><?php echo $customer['id_usuario']; ?></td>
+		<td><?php echo $customer['nome_comum']; ?></td>
+		<td><?php echo $customer['nome_cientifico']; ?></td>
+		<td><?php echo $customer['categoria']; ?></td>
+
 		<td class="actions text-right">
 			<a href="view.php?id=<?php echo $customer['id']; ?>" class="btn btn-sm btn-success"><i class="fa fa-eye"></i> Visualizar</a>
 			<a href="edit.php?id=<?php echo $customer['id']; ?>" class="btn btn-sm btn-warning"><i class="fa fa-pencil"></i> Editar</a>

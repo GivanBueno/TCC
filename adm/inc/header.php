@@ -60,11 +60,11 @@
             </li>
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                    LEEF <span class="caret"></span>
+                    Fotos <span class="caret"></span>
                 </a>
                 <ul class="dropdown-menu">
-                    <li><a href="<?php echo BASEURL; ?>LEEF">Gerenciar Conteudos</a></li>
-                    <li><a href="<?php echo BASEURL; ?>LEEF/add.php">Novo Conteudo</a></li>
+                    <li><a href="<?php echo BASEURL; ?>fotos">Gerenciar Fotos</a></li>
+                    <li><a href="<?php echo BASEURL; ?>fotos/add.php">Nova Foto</a></li>
                 </ul>
             </li>
             

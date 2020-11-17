@@ -5,7 +5,7 @@
 
 <?php include(HEADER_TEMPLATE); ?>
 
-<h2>Atualizar Cliente</h2>
+<h2>Atualizar Dados do Usuário</h2>
 
 <form action="edit.php?id=<?php echo $customer['id']; ?>" method="post">
   <hr />
@@ -27,7 +27,7 @@
 
     <div class="form-group col-md-4">
       <label for="name">Administrador</label>
-      <input type="email" class="form-control" name="customer['adm']" value="<?= $customer['adm']?>">
+      <input type="text" class="form-control" name="customer['adm']" value="<?= $customer['adm']?>">
     </div>
 
 
