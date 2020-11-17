@@ -68,7 +68,7 @@ $classe2 = $response['classe'];
                 foreach($response2 as $object) {
                     ?>
                         <tr>
-                            <td><a href="doc.php?search=<?=$object['link']?>" target="_blank" class="text-dark" style="border: 1px solid black !important; background: green !important;; color: white !important; padding: 5px; border-radius: 5px;"><i class="fas fa-lg fa-file-alt"></i></a></td>
+                            <td><a href="<?=$object['link']?>" target="_blank" class="text-dark" style="border: 1px solid black !important; background: green !important;; color: white !important; padding: 5px; border-radius: 5px;"><i class="fas fa-lg fa-file-alt"></i></a></td>
                             <td class="text-dark"><?=$object['titulo']?></td>
                         </tr>
                     <?php
