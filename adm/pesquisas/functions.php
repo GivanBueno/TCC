@@ -7,7 +7,7 @@ $customers = null;
 $customer = null;
 
 /**
- *  Listagem de Clientes
+ *  Listagem de Pesquisas
  */
 function index() {
 	global $customers;
@@ -24,7 +24,7 @@ function find_all( $table ) {
   }
 
   /**
- *  Cadastro de Clientes
+ *  Cadastro de Pesquisas
  */
 function add() {
 
@@ -34,7 +34,7 @@ function add() {
 		date_create('now', new DateTimeZone('America/Sao_Paulo'));
   
 	  $customer = $_POST['customer'];
-	  $customer['modified'] = $customer['created'] = $today->format("Y-m-d H:i:s");
+	  $customer['modifed'] = $customer['created'] = $today->format("Y-m-d H:i:s");
 	  
 	  save('documentos', $customer);
 	  header('location: index.php');
@@ -43,7 +43,7 @@ function add() {
 
   
 /**
- *	Atualizacao/Edicao de Cliente
+ *	Atualizacao/Edicao de Pesquisas
  */
 function edit() {
 
@@ -56,7 +56,7 @@ function edit() {
 	  if (isset($_POST['customer'])) {
   
 		$customer = $_POST['customer'];
-		$customer['modified'] = $now->format("Y-m-d H:i:s");
+		$customer['modifed'] = $now->format("Y-m-d H:i:s");
   
 		update('documentos', $id, $customer);
 		header('location: index.php');
@@ -71,7 +71,7 @@ function edit() {
   }
 
   /**
- *  Visualização de um Cliente
+ *  Visualização de uma pesquisa
  */
 function view($id = null) {
 	global $customer;
@@ -79,7 +79,7 @@ function view($id = null) {
   }
 
   /**
- *  Exclusão de um Cliente
+ *  Exclusão de uma pesquisa
  */
 function delete($id = null) {
 

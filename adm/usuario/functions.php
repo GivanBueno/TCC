@@ -7,7 +7,7 @@ $customers = null;
 $customer = null;
 
 /**
- *  Listagem de Clientes
+ *  Listagem de Usuario
  */
 function index() {
 	global $customers;
@@ -24,18 +24,18 @@ function find_all( $table ) {
   }
 
   /**
- *  Cadastro de Clientes
+ *  Cadastro de Usuario
  */
 function add() {
 
-	if (!empty($_POST['usuario'])) {
+	if (!empty($_POST['customer'])) {
 	  
 	  $today = 
 		date_create('now', new DateTimeZone('America/Sao_Paulo'));
   
-	  $customer = $_POST['usuario'];
-	  $customer['senha']    = hash('sha256',$customer['senha']);
-	  $customer['modified'] = $customer['created'] = $today->format("Y-m-d H:i:s");
+	  $customer = $_POST['customer'];
+	  $customer['senha'] = hash('sha256',$customer['senha']);
+	  $customer['modificacao'] = $customer['criacao'] = $today->format("Y-m-d H:i:s");
 	  
 	  save('usuario', $customer);
 	  header('location: index.php');
@@ -44,7 +44,7 @@ function add() {
 
   
 /**
- *	Atualizacao/Edicao de Cliente
+ *	Atualizacao/Edicao de Usuario
  */
 function edit() {
 
@@ -73,7 +73,7 @@ function edit() {
   }
 
   /**
- *  Visualização de um Cliente
+ *  Visualização de um Usuario
  */
 function view($id = null) {
 	global $customer;
@@ -81,7 +81,7 @@ function view($id = null) {
   }
 
   /**
- *  Exclusão de um Cliente
+ *  Exclusão de um Usuario
  */
 function delete($id = null) {
 

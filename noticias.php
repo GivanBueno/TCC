@@ -30,9 +30,9 @@ echo '<section class="blog_area section-padding">
                     <article class="blog_item">
                         <div class="blog_item_img">
                             <img class="card-img rounded-0" src="'.$row['imagem'].'" alt="">
-                            <a href="#" class="blog_item_date">
-                                <h3>17</h3>
-                                <p>Ago</p>
+                            <a class="blog_item_date">
+                                <h3>'.$row['dia'].'</h3>
+                                <p>'.$row['mes'].'</p>
                             </a>
                         </div>
                         <div class="blog_details">

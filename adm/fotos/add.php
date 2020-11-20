@@ -5,47 +5,56 @@
 
 <?php include(HEADER_TEMPLATE); ?>
 
-<h2>Novo Cliente</h2>
+<h2>Nova Foto</h2>
 
 <form action="add.php" method="post">
   <!-- area de campos do form -->
   <hr />
   <div class="row">
     <div class="form-group col-md-4">
-      <label for="name">Titulo</label>
-      <input type="text" class="form-control" name="customer['titulo']">
+      <label for="name">ID do usuário</label>
+      <input type="text" class="form-control" name="customer['id_usuario']">
     </div>
 
     <div class="form-group col-md-4">
-      <label for="name">Filo</label>
-      <input type="text" class="form-control" name="customer['filo']">
+      <label for="name">Nome de quem enviou</label>
+      <input type="text" class="form-control" name="customer['nome_envio']">
     </div>
 
     <div class="form-group col-md-4">
-      <label for="name">Arquivo</label>
-      <input type="text" class="form-control" name="customer['link']">
+      <label for="name">Nome do animal</label>
+      <input type="text" class="form-control" name="customer['nome_comum']">
     </div>
 
     <div class="form-group col-md-4">
-      <label for="name">Tipo</label>
-      <input type="text" class="form-control" name="customer['tipo']">
+      <label for="name">Nome científico do animal</label>
+      <input type="text" class="form-control" name="customer['nome_cientifico']">
     </div>
 
     <div class="form-group col-md-4">
-      <label for="name">Imagem</label>
-      <input type="text" class="form-control" name="customer['img']">
+      <label for="name">Categoria do animal</label>
+      <input type="text" class="form-control" name="customer['categoria']">
     </div>
 
     <div class="form-group col-md-4">
-      <label for="name">Classificação 1</label>
-      <input type="text" class="form-control" name="customer['nomeclatura']">
+      <label for="name">Localização da foto</label>
+      <input type="text" class="form-control" name="customer['localizacao']">
     </div>
 
     <div class="form-group col-md-4">
-      <label for="name">Classificação 2</label>
-      <input type="text" class="form-control" name="customer['classe']">
+      <label for="name">Latitude</label>
+      <input type="text" class="form-control" name="customer['lat']">
     </div>
 
+    <div class="form-group col-md-4">
+      <label for="name">Longitude</label>
+      <input type="text" class="form-control" name="customer['lng']">
+    </div>
+
+    <div class="form-group col-md-4">
+      <label for="name">Link da foto</label>
+      <input type="text" class="form-control" name="customer['foto']">
+    </div>
 
     </div>
   </div>

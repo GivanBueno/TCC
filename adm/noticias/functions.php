@@ -7,7 +7,7 @@ $customers = null;
 $customer = null;
 
 /**
- *  Listagem de Clientes
+ *  Listagem de noticias
  */
 function index() {
 	global $customers;
@@ -24,17 +24,17 @@ function find_all( $table ) {
   }
 
   /**
- *  Cadastro de Clientes
+ *  Cadastro de noticias
  */
 function add() {
 
-	if (!empty($_POST['noticias'])) {
+	if (!empty($_POST['customer'])) {
 	  
 	  $today = 
 		date_create('now', new DateTimeZone('America/Sao_Paulo'));
   
-	  $customer = $_POST['noticias'];
-	  $customer['modified'] = $customer['created'] = $today->format("Y-m-d H:i:s");
+	  $customer = $_POST['customer'];
+	  $customer['modificacao'] = $customer['criacao'] = $today->format("Y-m-d H:i:s");
 	  
 	  save('noticias', $customer);
 	  header('location: index.php');

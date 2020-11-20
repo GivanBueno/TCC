@@ -22,7 +22,7 @@ $classe2 = $response['classe'];
     <div class="slider-height2 d-flex align-items-center" style="background: #00000060;">
         <div class="container">
             <div class="row">
-                <div class="col-xl-12">
+                <div class="col-xl-12" style="text-align:center">
                     <div class="hero-cap hero-cap2">
                             <h2>Pesquisas Realizadas</h2>
                     </div>

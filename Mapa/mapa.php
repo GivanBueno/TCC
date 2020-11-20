@@ -53,11 +53,11 @@ echo '<html>';
                             "</div>" .
                             '<h1 id="firstHeading" class="firstHeading">'.$row['nome_comum'].'</h1>' .
                             '<div id="bodyContent">' .
-                            "<p>Nome:".$row['nome_comum']."</p>" .
-                            "<p>Nome Científico:".$row['nome_cientifico']."</p>" .
-                            "<p>Encontrado em:".$row['localizacao']."</p>" .
+                            "<p>Nome: ".$row['nome_comum']."</p>" .
+                            "<p>Nome Científico: ".$row['nome_cientifico']."</p>" .
+                            "<p>Encontrado em: ".$row['localizacao']."</p>" .
                             '<p><img style="width: 100%; max-width: 300px" src="'.$row['foto'].'"></p>' .
-                            '<p class="text-muted">Créditos:'.$row['nome_envio']."</p>" .
+                            '<p class="text-muted">Créditos: '.$row['nome_envio']."</p>" .
                             "</div>" .
                             "</div>";
 

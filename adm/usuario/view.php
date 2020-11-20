@@ -18,6 +18,12 @@
 	<br/>
 	<dt>Email:</dt>
 	<dd><?php echo $customer['email']; ?></dd>
+	<br/>
+	<dt>Data de criação:</dt>
+	<dd><?php echo $customer['criacao']; ?></dd>
+	<br/>
+	<dt>Data de modificação:</dt>
+	<dd><?php echo $customer['modificacao']; ?></dd>
 
 </dl>
 

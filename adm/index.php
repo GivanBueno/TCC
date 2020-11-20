@@ -10,7 +10,7 @@
 
 <div class="row">
 	<div class="col-xs-6 col-sm-3 col-md-2">
-		<a href="customers/add.php" class="btn btn-primary">
+		<a href="usuario/add.php" class="btn btn-primary">
 			<div class="row">
 				<div class="col-xs-12 text-center">
 					<i class="fa fa-plus fa-5x"></i>
@@ -23,7 +23,7 @@
 	</div>
 
 	<div class="col-xs-6 col-sm-3 col-md-2">
-		<a href="user" class="btn btn-default">
+		<a href="usuario" class="btn btn-default">
 			<div class="row">
 				<div class="col-xs-12 text-center">
 					<i class="fa fa-user fa-5x"></i>
@@ -36,7 +36,7 @@
 	</div>
 
 	<div class="col-xs-6 col-sm-3 col-md-2">
-		<a href="conteudo" class="btn btn-default">
+		<a href="noticias" class="btn btn-default">
 			<div class="row">
 				<div class="col-xs-12 text-center">
 					<i class="fa fa-user fa-5x"></i>
@@ -49,7 +49,7 @@
 	</div>
 
 	<div class="col-xs-6 col-sm-3 col-md-2">
-		<a href="documentos" class="btn btn-default">
+		<a href="pesquisas" class="btn btn-default">
 			<div class="row">
 				<div class="col-xs-12 text-center">
 					<i class="fa fa-user fa-5x"></i>
@@ -62,7 +62,7 @@
 	</div>
 
 	<div class="col-xs-6 col-sm-3 col-md-2">
-		<a href="LEEF" class="btn btn-default">
+		<a href="fotos" class="btn btn-default">
 			<div class="row">
 				<div class="col-xs-12 text-center">
 					<i class="fa fa-user fa-5x"></i>

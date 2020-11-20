@@ -75,10 +75,10 @@
                                     <div class="main-menu d-none d-lg-block">
                                         <nav> 
                                             <ul id="navigation">                                                                                          
-                                                <li class="active"><a href="index.php">Home</a></li>
+                                                <li><a href="index.php">Home</a></li>
                                                 <li><a href="noticias.php">Notícias</a></li>
                                                 <li><a href="categorias.php">Pesquisas</a></li>
-                                                <li><a href="mapa.php">Mapa</a></li>
+                                                <li><a href="categorias_galeria.php">Galeria</a></li>
                                                 <li><a href="LEEF.php">LEEF</a></li>
                                                 <li><a href="contato.php">Contato</a></li>
                                             </ul>

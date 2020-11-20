@@ -34,7 +34,7 @@
 
     <div class="form-group col-md-4">
       <label for="name">Link da imagem</label>
-      <input type="text" class="form-control" name="customer['tipo']">
+      <input type="text" class="form-control" name="customer['image']">
     </div>
 
     <div class="form-group col-md-4">
