@@ -34,7 +34,6 @@
 		<th width="30%">Titulo</th>
 		<th>Nomeclatura</th>
 		<th>Classe</th>
-		<th>Opções</th>
 	</tr>
 </thead>
 <tbody>

@@ -67,6 +67,15 @@
                     <li><a href="<?php echo BASEURL; ?>fotos/add.php">Nova Foto</a></li>
                 </ul>
             </li>
+
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                   Comentários <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="<?php echo BASEURL; ?>comentarios">Exibir Comentários</a></li>
+                </ul>
+            </li>
             
           </ul>
         </div><!--/.navbar-collapse -->

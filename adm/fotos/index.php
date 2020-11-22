@@ -35,7 +35,6 @@
 		<th width="30%">Nome comum</th>
 		<th>Nome Cientifico</th>
 		<th>Categoria</th>
-		<th>Opções</th>
 	</tr>
 </thead>
 <tbody>

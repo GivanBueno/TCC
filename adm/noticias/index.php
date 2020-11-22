@@ -33,7 +33,6 @@
 		<th>ID</th>
 		<th width="30%">Título</th>
 		<th>Conteudo</th>
-		<th>Opções</th>
 	</tr>
 </thead>
 <tbody>
