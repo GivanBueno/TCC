@@ -79,7 +79,7 @@
                                                 <li><a href="noticias.php">Notícias</a></li>
                                                 <li><a href="categorias.php">Pesquisas</a></li>
                                                 <li><a href="categorias_galeria.php">Galeria</a></li>
-                                                <li><a href="LEEF.php">LEEF</a></li>
+                                                <!-- <li><a href="LEEF.php">LEEF</a></li> -->
                                                 <li><a href="contato.php">Contato</a></li>
                                             </ul>
                                         </nav>
