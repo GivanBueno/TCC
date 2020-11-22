@@ -4,6 +4,7 @@ $username = "root";
 $password = "";
 $dbname = "observatorio";
 
+
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
 $conn->set_charset('utf-8');

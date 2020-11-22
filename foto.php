@@ -47,7 +47,7 @@ $classe2 = $response['nome_comum'];
             </div>
             <div class="about-caption mb-50">
                 
-                <p>Aqui temos o mapa da região de Sorocaba mostrando as fotos da comunidade </p>
+                <p>Aqui temos o mapa da região de Sorocaba mostrando a localização do animal no momento da foto</p>
             </div>
         </div>
         
@@ -61,6 +61,11 @@ $classe2 = $response['nome_comum'];
 
 
 <div class="container" style="padding:40px 0">
+
+    <div class="about-caption mb-50">
+        <p>Acervo de fotos do <?=$classe2?></p>
+    </div>
+
     <div class="row">
         <?php
         $sql = "SELECT * FROM fotos WHERE  nome_comum = '$classe2'";    
@@ -72,9 +77,10 @@ $classe2 = $response['nome_comum'];
                     echo'<div class="card col-md-3" style="width: 18rem;padding-top:5px">
                     <img class="card-img-top" src="'.$row['foto'].'" alt="Card image cap">
                     <div class="card-body">
-                      <h5 class="card-title">'.$row['nome_comum'].'</h5>
-                      <p class="card-text">'.$row['nome_cientifico'].' <br><p>Por: '.$row['nome_envio'].' </p>
-                      <strong>'.$row['localizacao'].'</strong></p>
+                      <p class="card-title"><strong>'.$row['nome_comum'].'</strong></p>
+                      <p class="card-text"><strong><i>'.$row['nome_cientifico'].'<strong></i> </p>
+                      <p>Tirada por: '.$row['nome_envio'].' </p>
+                      <p>'.$row['localizacao'].'</p>
                     </div>
                   </div>';
                 }

@@ -6,21 +6,21 @@
   <div id="formContent">
     <!-- Tabs Titles -->
 
-    <!-- Icon -->
+    <!-- Icone -->
     <div class="fadeIn first">
       <img src="upload/Nova pasta/logo.png" id="icon" alt="User Icon" />
     </div>
 
-    <!-- Login Form -->
-    <form>
-      <input type="text" id="login" class="fadeIn second" name="login" placeholder="Login">
-      <input type="text" id="password" class="fadeIn third" name="login" placeholder="Senha">
+    <!-- Form do Login -->
+    <form action="logindata.php">
+      <input type="text" id="login" class="fadeIn second" name="login" placeholder="Login" value="<?= $customer['email']?>">
+      <input type="text" id="password" class="fadeIn third" name="login" placeholder="Senha" <?= $customer['senha']?>>
       <input type="submit" class="fadeIn fourth" value="Entrar">
     </form>
 
     <!-- Remind Passowrd -->
     <div id="formFooter">
-      <a class="underlineHover" href="cadastrp.php">Não tem cadastro?</a>
+      <a class="underlineHover" href="#">Não tem cadastro?</a>
     </div>
 
   </div>

@@ -57,7 +57,6 @@ function edit() {
 	  if (isset($_POST['customer'])) {
   
 		$customer = $_POST['customer'];
-		$customer['senha'] = hash('sha256',$customer['senha']);
 		$customer['modificacao'] = $now->format("Y-m-d H:i:s");
   
 		update('usuario', $id, $customer);

@@ -42,7 +42,7 @@ $classe2 = $response['tipo'];
 <div class="container" style="padding:40px 0">
     <div class="row">
         <?php
-        $sql = "SELECT * FROM fotos WHERE  categoria = '$classe'";    
+        $sql = "SELECT DISTINCT nome_comum, nome_cientifico, foto FROM fotos WHERE  categoria = '$classe'";    
             if($results = $conn->query($sql))
             {
                 while ($row = $results->fetch_assoc())
