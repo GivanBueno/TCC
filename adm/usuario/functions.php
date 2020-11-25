@@ -28,13 +28,13 @@ function find_all( $table ) {
  */
 function add() {
 
-	if (!empty($_POST['customer'])) {
+	if (!empty($_POST['customer'])) 
+	{
 	  
 	  $today = 
 		date_create('now', new DateTimeZone('America/Sao_Paulo'));
   
 	  $customer = $_POST['customer'];
-	  $customer['senha'] = hash('sha256',$customer['senha']);
 	  $customer['modificacao'] = $customer['criacao'] = $today->format("Y-m-d H:i:s");
 	  
 	  save('usuario', $customer);
@@ -57,6 +57,7 @@ function edit() {
 	  if (isset($_POST['customer'])) {
   
 		$customer = $_POST['customer'];
+		$customer['senha'] = hash('sha256',$customer['senha']);
 		$customer['modificacao'] = $now->format("Y-m-d H:i:s");
   
 		update('usuario', $id, $customer);

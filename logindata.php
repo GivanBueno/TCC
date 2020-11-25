@@ -2,20 +2,20 @@
 <?php require_once DBAPI; ?>
 <?php
 
-$customers = null;
-$customer = null;
-
-if(empty($_POST['login']) || empty($_POST['password']) || empty($_POST['katchau']))
+echo $_POST['login'];
+if(empty($_POST['login']) || empty($_POST['password']))
 {
-    header('Location: artigos.php');
+
+    header('Location: login.php');
     exit;
 }
 
-$login = mysqli_real_escape_string($conn, $_POST[<$customer['senha']]);
+$login = mysqli_real_escape_string($conn, $_POST['login']);
 $senha = mysqli_real_escape_string($conn, $_POST['password']);
+$login = $_POST['login'];
+$senha = $_POST['password'];
 
-
-$query = "SELECT * FROM usuario WHERE email = 'observatoriobiodiversidadeurb@gmail.com' AND senha = 'kamila'";
+$query = "SELECT * FROM usuario WHERE email = '$login' AND senha = '$senha'";
 echo $query;
 exit;
 
