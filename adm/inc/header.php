@@ -2,7 +2,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>CRUD com Bootstrap</title>
+    <title>Administração do Observatório</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -27,44 +27,53 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a href="<?php echo BASEURL; ?>index.php" class="navbar-brand">Admin OBU</a>
+          <a href="<?php echo BASEURL; ?>index.php" class="navbar-brand">Administração Observatório</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">        
           <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                    Conteudo <span class="caret"></span>
+                    Noticias <span class="caret"></span>
                 </a>
                 <ul class="dropdown-menu">
-                    <li><a href="<?php echo BASEURL; ?>conteudo">Gerenciar Conteudo</a></li>
-                    <li><a href="<?php echo BASEURL; ?>conteudo/add.php">Novo Conteudo</a></li>
+                    <li><a href="<?php echo BASEURL; ?>noticias">Gerenciar Noticias</a></li>
+                    <li><a href="<?php echo BASEURL; ?>noticias/add.php">Nova Noticia</a></li>
                 </ul>
             </li>  
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                    Documentos <span class="caret"></span>
+                    Pesquisas <span class="caret"></span>
                 </a>
                 <ul class="dropdown-menu">
-                    <li><a href="<?php echo BASEURL; ?>documentos">Gerenciar Conteudo</a></li>
-                    <li><a href="<?php echo BASEURL; ?>documentos/add.php">Novo Conteudo</a></li>
+                    <li><a href="<?php echo BASEURL; ?>pesquisas">Gerenciar Pesquisas</a></li>
+                    <li><a href="<?php echo BASEURL; ?>pesquisas/add.php">Nova Pesquisa</a></li>
                 </ul>
             </li>
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                    Admin <span class="caret"></span>
+                    Usuários <span class="caret"></span>
                 </a>
                 <ul class="dropdown-menu">
-                    <li><a href="<?php echo BASEURL; ?>user">Gerenciar Conteudo</a></li>
-                    <li><a href="<?php echo BASEURL; ?>user/add.php">Novo Conteudo</a></li>
+                    <li><a href="<?php echo BASEURL; ?>usuario">Gerenciar Usuários</a></li>
+                    <li><a href="<?php echo BASEURL; ?>usuario/add.php">Novo Usuário</a></li>
                 </ul>
             </li>
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                    LEEF <span class="caret"></span>
+                    Fotos <span class="caret"></span>
                 </a>
                 <ul class="dropdown-menu">
-                    <li><a href="<?php echo BASEURL; ?>LEEF">Gerenciar Conteudo</a></li>
-                    <li><a href="<?php echo BASEURL; ?>LEEF/add.php">Novo Conteudo</a></li>
+                    <li><a href="<?php echo BASEURL; ?>fotos">Gerenciar Fotos</a></li>
+                    <li><a href="<?php echo BASEURL; ?>fotos/add.php">Nova Foto</a></li>
+                </ul>
+            </li>
+
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                   Comentários <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="<?php echo BASEURL; ?>comentarios">Exibir Comentários</a></li>
                 </ul>
             </li>
             
