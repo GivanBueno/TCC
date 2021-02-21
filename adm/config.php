@@ -1,7 +1,7 @@
 <?php
 
 /** O nome do banco de dados*/
-define('DB_NAME', 'obu');
+define('DB_NAME', 'observatorio');
 
 /** Usuário do banco de dados MySQL */
 define('DB_USER', 'root');
@@ -18,7 +18,7 @@ if ( !defined('ABSPATH') )
 	
 /** caminho no server para o sistema **/
 if ( !defined('BASEURL') )
-	define('BASEURL', '/obu/adm/');
+	define('BASEURL', '/TCC/adm/');
 	
 /** caminho do arquivo de banco de dados **/
 if ( !defined('DBAPI') )

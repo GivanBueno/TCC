@@ -91,7 +91,7 @@ function save($table = null, $data = null) {
   
     try {
       $database->query($sql);
-  
+      echo $database->error;
       $_SESSION['message'] = 'Registro cadastrado com sucesso.';
       $_SESSION['type'] = 'success';
     
@@ -126,7 +126,7 @@ function update($table = null, $id = 0, $data = null) {
   
     try {
       $database->query($sql);
-  
+      echo $database->error;
       $_SESSION['message'] = 'Registro atualizado com sucesso.';
       $_SESSION['type'] = 'success';
   
